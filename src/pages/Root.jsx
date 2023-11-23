@@ -5,7 +5,7 @@ import styles from "./Root.module.css";
 import Header from "../components/Header";
 import BurgerMenu from "../components/BurgerMenu";
 
-const RootLayout = () => {
+const RootLayout = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleButtonClick = () => {
@@ -17,7 +17,7 @@ const RootLayout = () => {
       <Header onButtonClick={handleButtonClick} />
       <div className={styles.sectionWrapper}>
         {isOpen && <BurgerMenu />}
-        <Outlet />
+        {children}
       </div>
     </Fragment>
   );
