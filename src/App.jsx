@@ -8,7 +8,7 @@ import ContactPage from "./pages/ContactPage";
 
 const router = createBrowserRouter([
   {
-    path: "/my-portfolio",
+    path: "/",
     element: <RootLayout />,
     children: [
       { path: "", element: <Homepage /> },
@@ -21,6 +21,18 @@ const router = createBrowserRouter([
 
 function App() {
   return <RouterProvider router={router} />;
+  // return (
+  // <Router>
+  //   <RootLayout>
+  //     <Routes>
+  //       <Route path="/my-portfolio" element={<Homepage />} />
+  //       <Route path="/my-portfolio/about" element={<AboutPage />} />
+  //       <Route path="/my-portfolio/projects" element={<ProjectsPage />} />
+  //       <Route path="/my-portfolio/contact" element={<ContactPage />} />
+  //     </Routes>
+  //   </RootLayout>
+  // </Router>
+  // );
 }
 
 export default App;

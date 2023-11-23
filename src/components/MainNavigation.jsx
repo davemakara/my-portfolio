@@ -36,7 +36,7 @@ const MainNavigation = () => {
         </li>
         <li>
           <NavLink
-            to="contact"
+            to="/contact"
             className={`${styles.navLink} ${({ isActive }) =>
               isActive ? styles.active : ""}`}
           >
