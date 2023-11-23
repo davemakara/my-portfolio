@@ -1,0 +1,32 @@
+.main-navigation {
+  display: none;
+}
+
+.active {
+  color: blueviolet;
+}
+
+ul {
+  display: flex;
+}
+
+.navLink {
+  padding: 2rem;
+  display: inline-block;
+  font-size: 0.9rem;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  transition: color 0.3s;
+}
+
+.navLink:hover {
+  color: blueviolet;
+}
+
+@media only screen and (min-width: 800px) {
+  .main-navigation {
+    display: block;
+  }
+}

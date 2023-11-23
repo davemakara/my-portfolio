@@ -1,0 +1,27 @@
+.burger-menu {
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  background-color: #fff;
+  transition: all 0.3s;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.burger-menu ul {
+  display: block;
+}
+
+.burger-menu ul li a {
+  display: block;
+
+  padding: 1.5rem 1.5rem;
+  font-size: 0.8rem;
+  color: #333;
+  text-align: right;
+  border-bottom: 1px solid #eee;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.3s;
+}
