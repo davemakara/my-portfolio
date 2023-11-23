@@ -1,20 +1,30 @@
+import { NavLink } from "react-router-dom";
+
 import styles from "./BurgerMenu.module.css";
 
-const BurgerMenu = () => {
+const BurgerMenu = ({ onButtonClick }) => {
   return (
     <div className={styles["burger-menu"]}>
       <ul>
         <li>
-          <a href="/">HOME</a>
+          <NavLink to="/" onClick={onButtonClick}>
+            HOME
+          </NavLink>
         </li>
         <li>
-          <a href="/about">ABOUT</a>
+          <NavLink to="/about" onClick={onButtonClick}>
+            ABOUT
+          </NavLink>
         </li>
         <li>
-          <a href="/projects">PROJECTS</a>
+          <NavLink to="/projects" onClick={onButtonClick}>
+            PROJECTS
+          </NavLink>
         </li>
         <li>
-          <a href="/contact">CONTACT</a>
+          <NavLink to="/contact" onClick={onButtonClick}>
+            CONTACT
+          </NavLink>
         </li>
       </ul>
     </div>

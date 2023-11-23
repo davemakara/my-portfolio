@@ -7,16 +7,18 @@ import BurgerMenu from "../components/BurgerMenu";
 
 const RootLayout = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [menuIsClicked, setMenuIsClicked] = useState(false);
 
   const handleButtonClick = () => {
     setIsOpen((prev) => !prev);
+    setMenuIsClicked((prev) => !prev);
   };
 
   return (
     <Fragment>
-      <Header onButtonClick={handleButtonClick} />
+      <Header onButtonClick={handleButtonClick} displayMenu={menuIsClicked} />
       <div className={styles.sectionWrapper}>
-        {isOpen && <BurgerMenu />}
+        {isOpen && <BurgerMenu onButtonClick={handleButtonClick} />}
         {children}
       </div>
     </Fragment>

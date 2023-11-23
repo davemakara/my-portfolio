@@ -25,3 +25,9 @@
   letter-spacing: 2px;
   transition: color 0.3s;
 }
+
+@media only screen and (min-width: 800px) {
+  .burger-menu {
+    display: none;
+  }
+}

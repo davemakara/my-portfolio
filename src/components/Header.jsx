@@ -2,8 +2,9 @@ import profilePic from "../assets/profile.jpg";
 import styles from "./Header.module.css";
 import MainNavigation from "./MainNavigation";
 import menuIcon from "../assets/menu.svg";
+import closeMenuIcon from "../assets/menu-close.svg";
 
-const Header = ({ onButtonClick }) => {
+const Header = ({ onButtonClick, displayMenu }) => {
   return (
     <header>
       <span className={styles.profileInfo}>
@@ -14,7 +15,7 @@ const Header = ({ onButtonClick }) => {
       </span>
 
       <img
-        src={menuIcon}
+        src={!displayMenu ? menuIcon : closeMenuIcon}
         alt="menu icon"
         className={styles["menu-icon"]}
         onClick={onButtonClick}
