@@ -1,5 +1,9 @@
 section {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6.2rem 2rem;
   /* height: 100vh; */
   /* background-image: url(/src/assets/common-bg.svg); */
   /* background: linear-gradient(
@@ -9,3 +13,56 @@ section {
     url(/src/assets/common-bg.svg)
   ); */
 }
+
+.main-div {
+  text-align: center;
+  width: 90%;
+  max-width: 50rem;
+}
+
+.main-div h1 {
+  font-size: 2.1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #111;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+.main-div p {
+  color: #333;
+  font-size: 1rem;
+  /* width: 100%; */
+  /* text-align: center; */
+  line-height: 1.6;
+  letter-spacing: 1px;
+  margin-bottom: 3.4rem;
+  /* font-weight: 100; */
+}
+.jumpButton {
+  border: none;
+  transition: transform 0.3s;
+}
+
+.jumpButton:hover {
+  transform: translateY(-5px);
+}
+
+.btnLink {
+  font-size: 1rem;
+  color: #fff;
+  background: #7843e9;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  padding: 1rem 4.2rem;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+
+  transition: all 0.3s;
+}
+
+/* .btnLink:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} */

@@ -1,0 +1,30 @@
+.button-UI {
+  border: none;
+
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+}
+
+.button-UI:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btnLink {
+  font-size: 1rem;
+  color: #fff;
+  padding: 1.1rem 4.2rem;
+  background: #7843e9;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 620px) {
+  .button-UI {
+    font-size: 1.2rem;
+  }
+}

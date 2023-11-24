@@ -18,7 +18,7 @@
   padding: 1.5rem 1.5rem;
   font-size: 0.8rem;
   color: #333;
-  text-align: right;
+  text-align: center;
   border-bottom: 1px solid #eee;
   font-weight: 700;
   text-transform: uppercase;
@@ -26,7 +26,11 @@
   transition: color 0.3s;
 }
 
-@media only screen and (min-width: 800px) {
+.burger-menu ul li a:hover {
+  color: blueviolet;
+}
+
+@media only screen and (min-width: 620px) {
   .burger-menu {
     display: none;
   }

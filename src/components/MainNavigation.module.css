@@ -11,9 +11,9 @@ ul {
 }
 
 .navLink {
-  padding: 2rem;
+  padding: 2rem 1rem;
   display: inline-block;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: #333;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -25,8 +25,16 @@ ul {
   color: blueviolet;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 620px) {
   .main-navigation {
     display: block;
+  }
+}
+
+@media only screen and (min-width: 820px) {
+  .navLink {
+    padding: 2rem;
+
+    font-size: 0.9rem;
   }
 }
