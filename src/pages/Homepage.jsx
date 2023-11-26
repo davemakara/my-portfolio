@@ -3,7 +3,7 @@ import styles from "./Homepage.module.css";
 
 const Homepage = () => {
   return (
-    <section>
+    <section className={styles["main-homepage"]}>
       <div className={styles["main-div"]}>
         <h1>HEY, I'M DAVID MAKAROV</h1>
         <p>

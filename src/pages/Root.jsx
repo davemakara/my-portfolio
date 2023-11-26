@@ -4,6 +4,7 @@ import styles from "./Root.module.css";
 
 import Header from "../components/Header";
 import BurgerMenu from "../components/BurgerMenu";
+import Footer from "../components/Footer";
 
 const RootLayout = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,13 +16,14 @@ const RootLayout = ({ children }) => {
   };
 
   return (
-    <Fragment>
+    <div className={styles["entire-app-wrapper"]}>
       <Header onButtonClick={handleButtonClick} displayMenu={menuIsClicked} />
       <div className={styles.sectionWrapper}>
         {isOpen && <BurgerMenu onButtonClick={handleButtonClick} />}
         {children}
       </div>
-    </Fragment>
+      <Footer />
+    </div>
   );
 };
 
