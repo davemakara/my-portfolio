@@ -18,6 +18,7 @@ const RootLayout = ({ children }) => {
   return (
     <div className={styles["entire-app-wrapper"]}>
       <Header onButtonClick={handleButtonClick} displayMenu={menuIsClicked} />
+
       <div className={styles.sectionWrapper}>
         {isOpen && <BurgerMenu onButtonClick={handleButtonClick} />}
         {children}

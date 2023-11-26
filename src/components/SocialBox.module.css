@@ -1,0 +1,39 @@
+.socialbox-wrapper {
+  display: none;
+  position: absolute;
+  z-index: 9;
+  top: 50%;
+  left: 0;
+  padding: 0.3rem;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  transform: translateY(-50%);
+}
+
+.socialbox-wrapper ul {
+  display: block;
+}
+
+.socialbox-wrapper ul li a {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  transition: all 0.3s ease-out;
+  border-radius: 5px;
+}
+
+.socialbox-wrapper ul li a:hover {
+  background-color: rgba(100, 100, 111, 0.2);
+}
+
+.social-image {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+@media only screen and (min-width: 720px) {
+  .socialbox-wrapper {
+    display: block;
+  }
+}

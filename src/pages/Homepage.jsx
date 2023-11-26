@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
 import styles from "./Homepage.module.css";
 
+import SocialBox from "../components/SocialBox";
+
 const Homepage = () => {
   return (
     <section className={styles["main-homepage"]}>
+      <SocialBox />
       <div className={styles["main-div"]}>
         <h1>HEY, I'M DAVID MAKAROV</h1>
         <p>
