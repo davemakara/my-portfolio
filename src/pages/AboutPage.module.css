@@ -1,38 +1,88 @@
 .aboutPage-wrapper {
   width: 100%;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
   min-height: 100vh;
   padding: 70px 20px 0;
 }
 
 .about-me {
   padding: 4rem 0;
+  max-width: 50rem;
+  margin: 0 auto;
   text-align: center;
 }
 
 .about-me h1 {
   font-size: 2rem;
+  /* text-align: center; */
   letter-spacing: 2px;
   margin-bottom: 1.8rem;
 }
 
 .about-me p {
-  color: #555;
+  color: #666;
   text-align: center;
-  font-size: 0.9rem;
-  font-weight: 500;
-  max-width: 50rem;
-  line-height: 1.6;
+  font-size: 1rem;
+
+  max-width: 60rem;
+  line-height: 1.7;
 }
 
-.bio-info h4 {
+.below-wrapper {
+  display: block;
+  width: 100%;
+}
+
+.bio-info {
+  margin-bottom: 3rem;
+  max-width: 30rem;
+}
+
+.bio-info h4,
+.my-skills h4 {
   font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.bio-info p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+  max-width: 30rem;
+}
+
+.skill-item {
+  padding: 0.7rem 0.9rem;
+  background: rgba(153, 153, 153, 0.2);
+  color: #666;
+  font-size: 0.8rem;
+
+  margin: 0 12px 12px 0;
+  border-radius: 5px;
 }
 
 @media only screen and (min-width: 620px) {
   .aboutPage-wrapper {
     padding: 90px 20px 0;
+  }
+}
+
+@media only screen and (min-width: 820px) {
+  /* .aboutPage-wrapper {
+    display: block;
+  } */
+  .below-wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0 1rem 2rem;
   }
 }

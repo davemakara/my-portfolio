@@ -1,5 +1,7 @@
 import styles from "./AboutPage.module.css";
 
+import { MY_SKILLS } from "../store/store";
+
 const AboutPage = () => {
   return (
     <section className={styles["aboutPage-wrapper"]}>
@@ -10,7 +12,7 @@ const AboutPage = () => {
           skills mostly in terms of programming and technology
         </p>
       </div>
-      <div>
+      <div className={styles["below-wrapper"]}>
         <div className={styles["bio-info"]}>
           <h4>Get to know me!</h4>
           <p>
@@ -31,9 +33,15 @@ const AboutPage = () => {
             experience then don't hesitate to contact me.
           </p>
         </div>
-        <div>
+        <div className={styles["my-skills"]}>
           <h4>My Skills</h4>
-          <p>dddd ddddddddddd dddddddddddddddd dddddddddddddd</p>
+          <div className={styles["skills-wrapper"]}>
+            {MY_SKILLS.map((skill) => (
+              <span key={skill} className={styles["skill-item"]}>
+                {skill}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </section>
