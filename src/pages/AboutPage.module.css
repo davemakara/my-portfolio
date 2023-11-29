@@ -1,8 +1,6 @@
 .aboutPage-wrapper {
   width: 100%;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
+
   min-height: 100vh;
   padding: 70px 20px 0;
 }
@@ -72,17 +70,52 @@
 
 @media only screen and (min-width: 620px) {
   .aboutPage-wrapper {
-    padding: 90px 20px 0;
+    padding: 90px 20px 20px;
   }
 }
 
 @media only screen and (min-width: 820px) {
-  /* .aboutPage-wrapper {
-    display: block;
-  } */
   .below-wrapper {
     display: flex;
     justify-content: space-around;
-    padding: 1rem 0 1rem 2rem;
+    /* padding: 1rem 0 1rem 2rem; */
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .about-me {
+    padding: 5rem 0;
+  }
+  .about-me h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-me p {
+    font-size: 1.1rem;
+  }
+
+  .bio-info {
+    max-width: 35rem;
+  }
+  .bio-info h4,
+  .my-skills h4 {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .below-wrapper {
+    /* padding: 0 4rem; */
+
+    justify-content: space-around;
+  }
+
+  .bio-info p {
+    font-size: 1.1rem;
+  }
+
+  .skill-item {
+    font-size: 0.9rem;
+    margin: 0 14px 14px 0;
   }
 }
