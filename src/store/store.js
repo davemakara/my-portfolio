@@ -28,14 +28,31 @@ export const PROJECTS = [
     name: "Github User Search",
     image: githubSearchImg,
     description:
-      "Github user search in an App (responsive) for searching dev on gitHub using API and displaying it on the screen.",
+      "Github User Search in an App for searching developers on gitHub using API and displaying it on the screen.",
+    skills: ["HTML", "CSS", "Javascript", "SASS", "Github"],
+    overview:
+      "Github User Search in an App for searching developers on gitHub. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices. Also, I'm using API and based on username search it displays developer info on the screen.",
+    link: "https://davemakara.github.io/Github-User-Search/",
   },
   {
     id: "p2",
     name: "Food Order App",
     image: foodOrderImg,
     description:
-      "Github user search in an App (responsive) for searching dev on gitHub using API and displaying it on the screen.",
+      "Food Order App in an app for adding selected products to the cart and managing cart with adding or removing items.",
+    skills: [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "React",
+      "SASS",
+      "Styled Components",
+      "Redux",
+      "Github",
+    ],
+    overview:
+      "Food Order App in an app similar to the food delivery apps where you have several products selection with option to add it on a cart and manage. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices.",
+    link: "https://davemakara.github.io/Github-User-Search/",
   },
   {
     id: "p3",

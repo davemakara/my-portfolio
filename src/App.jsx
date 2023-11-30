@@ -5,6 +5,7 @@ import Homepage from "./pages/Homepage";
 import AboutPage from "./pages/AboutPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ContactPage from "./pages/ContactPage";
+import ProjectDetail from "./pages/ProjectDetail";
 
 // const router = createBrowserRouter([
 //   {
@@ -27,6 +28,8 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/projects/:projectId" element={<ProjectDetail />} />
+
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </RootLayout>

@@ -20,6 +20,7 @@ const ProjectsPage = () => {
             image={el.image}
             name={el.name}
             description={el.description}
+            data={el}
           />
         ))}
       </div>
