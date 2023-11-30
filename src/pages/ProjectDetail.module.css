@@ -7,6 +7,7 @@
 
 .project-detail-wrapper h1 {
   text-align: center;
+  font-size: 1.5rem;
   padding: 1.5rem 0 2.5rem;
 }
 
@@ -34,6 +35,8 @@
 
 .image-wrapper img {
   width: 100%;
+  border-radius: 8px;
+  border: 5px solid #000;
 }
 
 .project-skills-wrapper {
@@ -54,6 +57,7 @@
 
 .btn-wrapper {
   display: flex;
+  margin-top: 1.8rem;
 }
 
 .btn-live-link,
@@ -84,11 +88,45 @@
 .a-live-link {
   color: #fff;
   background: #7843e9;
-  margin-right: 1rem;
+  margin-right: 1.1rem;
 }
 
 .a-go-back {
   color: #000;
   background: #fff;
   /* border: 1px solid #7843e9; */
+}
+
+@media only screen and (min-width: 920px) {
+  .image-wrapper {
+    padding: 4rem 20% 1rem;
+  }
+  .project-below-wrapper {
+    margin: 0 auto;
+    max-width: 45rem;
+  }
+
+  .project-detail-wrapper h1 {
+    font-size: 1.8rem;
+    padding: 1.7rem 0 3rem;
+  }
+
+  .project-detail-wrapper h4 {
+    font-size: 1.4rem;
+  }
+  .project-detail-wrapper p {
+    font-size: 1rem;
+  }
+  .project-skill {
+    font-size: 0.9rem;
+  }
+  .btn-wrapper {
+    margin-top: 2rem;
+  }
+  .a-live-link,
+  .a-go-back {
+    font-size: 0.9rem;
+
+    padding: 0.7rem 1.3rem;
+  }
 }

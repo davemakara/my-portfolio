@@ -14,7 +14,7 @@ const ProjectDetail = () => {
         <img src={project.image} alt={project.image} />
       </span>
       <h1>{project.name}</h1>
-      <div>
+      <div className={styles["project-below-wrapper"]}>
         <h4>Project Overview</h4>
         <p>{project.overview}</p>
         <p className={styles.lastP}>
