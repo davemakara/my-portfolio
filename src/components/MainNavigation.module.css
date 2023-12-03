@@ -14,7 +14,9 @@ ul {
   padding: 2rem 1rem;
   display: inline-block;
   font-size: 0.8rem;
-  color: #333;
+  /* color: #333; */
+  color: #f5f5f5;
+  /* color: #eea47f; */
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
@@ -22,7 +24,7 @@ ul {
 }
 
 .navLink:hover {
-  color: blueviolet;
+  color: #eea47f;
 }
 
 @media only screen and (min-width: 620px) {

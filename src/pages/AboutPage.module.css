@@ -13,6 +13,7 @@
 }
 
 .about-me h1 {
+  color: #f5f5f5;
   font-size: 2rem;
   /* text-align: center; */
   letter-spacing: 2px;
@@ -20,7 +21,8 @@
 }
 
 .about-me p {
-  color: #666;
+  /* color: #666; */
+  color: #f5f5f5;
   text-align: center;
   font-size: 1rem;
 
@@ -40,12 +42,13 @@
 
 .bio-info h4,
 .my-skills h4 {
+  color: #f5f5f5;
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
 
 .bio-info p {
-  color: #666;
+  color: #f5f5f5;
   font-size: 1rem;
   line-height: 1.7;
   margin-bottom: 1rem;
@@ -61,7 +64,8 @@
 .skill-item {
   padding: 0.7rem 0.9rem;
   background: rgba(153, 153, 153, 0.2);
-  color: #666;
+  /* color: #666; */
+  color: #f5f5f5;
   font-size: 0.8rem;
 
   margin: 0 12px 12px 0;

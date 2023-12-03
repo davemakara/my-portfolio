@@ -30,20 +30,17 @@ const ProjectDetail = () => {
         </ul>
         <h4>See Live</h4>
         <div className={styles["btn-wrapper"]}>
-          <button className={styles["btn-live-link"]}>
-            <a
-              href={project.link}
-              target="_blank"
-              className={styles["a-live-link"]}
-            >
-              LIVE LINK
-            </a>
-          </button>
-          <button className={styles["btn-go-back"]}>
-            <Link to="/projects" className={styles["a-go-back"]}>
-              GO BACK
-            </Link>
-          </button>
+          <a
+            href={project.link}
+            target="_blank"
+            className={styles["a-live-link"]}
+          >
+            LIVE LINK
+          </a>
+
+          <Link to="/projects" className={styles["a-go-back"]}>
+            GO BACK
+          </Link>
         </div>
       </div>
     </section>

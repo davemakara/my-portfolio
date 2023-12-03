@@ -1,4 +1,4 @@
-import profilePic from "../assets/profile.jpg";
+import profilePic from "../assets/profile2.jpg";
 import styles from "./Header.module.css";
 import MainNavigation from "./MainNavigation";
 import menuIcon from "../assets/menu.svg";
