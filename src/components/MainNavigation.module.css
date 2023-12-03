@@ -3,7 +3,7 @@
 }
 
 .active {
-  color: blueviolet;
+  color: #eea47f;
 }
 
 ul {
@@ -14,9 +14,7 @@ ul {
   padding: 2rem 1rem;
   display: inline-block;
   font-size: 0.8rem;
-  /* color: #333; */
   color: #f5f5f5;
-  /* color: #eea47f; */
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;

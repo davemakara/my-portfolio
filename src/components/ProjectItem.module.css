@@ -12,12 +12,10 @@
   width: 100%;
   overflow: hidden;
   border-radius: 7px;
-  /* border: 4px solid white; */
 }
 
 .project-item-wrapper span img {
   width: 100%;
-  /* height: 100%; */
   display: block;
   object-fit: cover;
 }
@@ -51,7 +49,6 @@
 .project-linkBtn {
   font-size: 0.8rem;
   color: #fff;
-  /* background: #7843e9; */
   background: #eea47f;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -84,10 +81,8 @@
     grid-gap: 4rem;
   }
   .project-item-description {
-    /* max-width: 30rem; */
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: flex-start;
     text-align: left;
   }

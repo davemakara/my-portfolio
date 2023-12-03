@@ -1,6 +1,5 @@
 import { Fragment, useState } from "react";
 import { Outlet } from "react-router-dom";
-import styles from "./Root.module.css";
 
 import Header from "../components/Header";
 import BurgerMenu from "../components/BurgerMenu";
@@ -16,10 +15,9 @@ const RootLayout = ({ children }) => {
   };
 
   return (
-    <div className={styles["entire-app-wrapper"]}>
+    <div>
       <Header onButtonClick={handleButtonClick} displayMenu={menuIsClicked} />
-
-      <div className={styles.sectionWrapper}>
+      <div>
         {isOpen && <BurgerMenu onButtonClick={handleButtonClick} />}
         {children}
       </div>

@@ -1,9 +1,8 @@
 .burger-menu {
   position: absolute;
   top: 70px;
-
   width: 100%;
-  background-color: #fff;
+  background: linear-gradient(to right, #001f3f, #003366);
   transition: all 0.3s;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
 }
@@ -17,9 +16,8 @@
 
   padding: 1.5rem 1.5rem;
   font-size: 0.8rem;
-  color: #333;
+  color: #f5f5f5;
   text-align: center;
-  border-bottom: 1px solid #eee;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -27,7 +25,7 @@
 }
 
 .burger-menu ul li a:hover {
-  color: blueviolet;
+  color: #eea47f;
 }
 
 @media only screen and (min-width: 620px) {

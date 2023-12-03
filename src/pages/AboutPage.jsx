@@ -21,11 +21,12 @@ const AboutPage = () => {
             Check out some of my work in the Projects section.
           </p>
           <p>
-            I also like sharing content related to the stuff that I have learned
-            over the years in Web Development so it can help other people of the
-            Dev Community. Feel free to Connect or Follow me on my Linkedin
-            where I post useful content related to Web Development and
-            Programming
+            As a React enthusiast, I specialize in crafting modern, responsive,
+            and user-friendly applications. I thrive on turning complex problems
+            into elegant solutions through the power of clean and efficient
+            code. Whether it's building interactive components, optimizing
+            performance, or ensuring a seamless user experience, I'm dedicated
+            to delivering high-quality results.
           </p>
           <p>
             I'm open to Job opportunities where I can contribute, learn and

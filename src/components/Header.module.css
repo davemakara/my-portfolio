@@ -6,8 +6,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
-  /* background-color: #fff; */
-  /* border-bottom: 1px solid #eee; */
 }
 
 .profileInfo {
@@ -63,11 +61,6 @@ header {
     height: 90px;
   }
 
-  /* .profileInfo .imgWrapper {
-    width: 3rem;
-    height: 3rem;
-  } */
-
   .profileInfo p {
     font-size: 0.8rem;
   }
@@ -94,12 +87,4 @@ header {
   .profileInfo p {
     font-size: 0.9rem;
   }
-
-  /* .menu-icon {
-    display: none;
-  } */
-
-  /* .main-navigation {
-    display: block;
-  } */
 }

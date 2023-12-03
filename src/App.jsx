@@ -7,21 +7,7 @@ import ProjectsPage from "./pages/ProjectsPage";
 import ContactPage from "./pages/ContactPage";
 import ProjectDetail from "./pages/ProjectDetail";
 
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <RootLayout />,
-//     children: [
-//       { path: "", element: <Homepage /> },
-//       { path: "about", element: <AboutPage /> },
-//       { path: "projects", element: <ProjectsPage /> },
-//       { path: "contact", element: <ContactPage /> },
-//     ],
-//   },
-// ]);
-
 function App() {
-  // return <RouterProvider router={router} />;
   return (
     <RootLayout>
       <Routes>

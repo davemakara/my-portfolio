@@ -3,6 +3,8 @@ import styles from "./Header.module.css";
 import MainNavigation from "./MainNavigation";
 import menuIcon from "../assets/menu.svg";
 import closeMenuIcon from "../assets/menu-close.svg";
+import burgerMenuIcon from "../assets/burgerMenu.jpg";
+import xMenuIcon from "../assets/x-button.png";
 
 const Header = ({ onButtonClick, displayMenu }) => {
   return (
@@ -15,7 +17,7 @@ const Header = ({ onButtonClick, displayMenu }) => {
       </span>
 
       <img
-        src={!displayMenu ? menuIcon : closeMenuIcon}
+        src={!displayMenu ? burgerMenuIcon : xMenuIcon}
         alt="menu icon"
         className={styles["menu-icon"]}
         onClick={onButtonClick}
