@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.022058d1.css",
-    "main.js": "/my-portfolio/static/js/main.5ef76725.js",
+    "main.js": "/my-portfolio/static/js/main.88b9535d.js",
     "static/media/SENTOBAR.png": "/my-portfolio/static/media/SENTOBAR.d0d55a6b3a1f11831ea4.png",
     "static/media/foodApp.png": "/my-portfolio/static/media/foodApp.fef1844ceb87d4dd6771.png",
     "static/media/profile2.jpg": "/my-portfolio/static/media/profile2.5aeb26f98a66d98789a3.jpg",
@@ -10,6 +10,7 @@
     "static/media/sign-up-form.png": "/my-portfolio/static/media/sign-up-form.b45eea65a377f1643a2d.png",
     "static/media/weather-app.png": "/my-portfolio/static/media/weather-app.36dfb32643ee41761656.png",
     "static/media/skote.png": "/my-portfolio/static/media/skote.46bc2dc91ec75519c2c5.png",
+    "static/media/joblisting.png": "/my-portfolio/static/media/joblisting.8b2ea72f2a205b666def.png",
     "static/media/social-instagram.png": "/my-portfolio/static/media/social-instagram.55309d71cbc1f392ec1c.png",
     "static/media/githubUserSearch.png": "/my-portfolio/static/media/githubUserSearch.9dbcd4aabbab4fcb7ca9.png",
     "static/media/footer-insta-icon.png": "/my-portfolio/static/media/footer-insta-icon.cf2d8d59d9842ae83b04.png",
@@ -22,10 +23,10 @@
     "static/media/menu.svg": "/my-portfolio/static/media/menu.67af819cd8b016553cfe5e91fc4626d9.svg",
     "static/media/menu-close.svg": "/my-portfolio/static/media/menu-close.26f09e36db4c8500ff4b8c90e24d5f7a.svg",
     "main.022058d1.css.map": "/my-portfolio/static/css/main.022058d1.css.map",
-    "main.5ef76725.js.map": "/my-portfolio/static/js/main.5ef76725.js.map"
+    "main.88b9535d.js.map": "/my-portfolio/static/js/main.88b9535d.js.map"
   },
   "entrypoints": [
     "static/css/main.022058d1.css",
-    "static/js/main.5ef76725.js"
+    "static/js/main.88b9535d.js"
   ]
 }
