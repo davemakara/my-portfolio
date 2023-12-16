@@ -1,3 +1,4 @@
+import jobListingImg from "../assets/joblisting.png";
 import githubSearchImg from "../assets/githubUserSearch.png";
 import foodOrderImg from "../assets/foodApp.png";
 import investmentImg from "../assets/investmentApp.png";
@@ -13,11 +14,14 @@ export const MY_SKILLS = [
   "CSS",
   "JavaScript",
   "React",
-  "SASS",
+  "Redux",
+  "React Router",
+  "Styled Components",
+  "RESTful APIs",
+  "SCSS",
   "Tailwind",
   "Bootstrap",
   "Responsive Design",
-  "Redux",
   "GIT",
   "Github",
 ];
@@ -25,17 +29,35 @@ export const MY_SKILLS = [
 export const PROJECTS = [
   {
     id: "p1",
+    name: "Job Listings",
+    image: jobListingImg,
+    description:
+      "Job Listings is an App with an option to filter and search jobs based on tech skills and experience.",
+    skills: [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "React",
+      "Styled Components",
+      "Github",
+    ],
+    overview:
+      "Job Listings is an App with an option to filter and search jobs based on tech skills and experience. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices. Also, I'm using API and based on username search it displays developer info on the screen.",
+    link: "https://davemakara.github.io/job-listings/",
+  },
+  {
+    id: "p2",
     name: "Github User Search",
     image: githubSearchImg,
     description:
       "Github User Search is an App for searching developers on gitHub using API and displaying it on the screen.",
-    skills: ["HTML", "CSS", "Javascript", "SASS", "Github"],
+    skills: ["HTML", "CSS", "Javascript", "SCSS", "Github"],
     overview:
       "Github User Search is an App for searching developers on gitHub. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices. Also, I'm using API and based on username search it displays developer info on the screen.",
     link: "https://davemakara.github.io/Github-User-Search/",
   },
   {
-    id: "p2",
+    id: "p3",
     name: "Food Order App",
     image: foodOrderImg,
     description:
@@ -45,7 +67,7 @@ export const PROJECTS = [
       "CSS",
       "Javascript",
       "React",
-      "SASS",
+      "SCSS",
       "Styled Components",
       "Redux",
       "Github",
@@ -55,7 +77,7 @@ export const PROJECTS = [
     link: "https://davemakara.github.io/order-food-app/",
   },
   {
-    id: "p3",
+    id: "p4",
     name: "Project App",
     image: projectAppImg,
     description:
@@ -74,18 +96,18 @@ export const PROJECTS = [
     link: "https://davemakara.github.io/Project-App/",
   },
   {
-    id: "p4",
+    id: "p5",
     name: "Sign Up Form",
     image: signupImg,
     description:
       "Sign Up Form is a project with several steps of registering and a full validation logic.",
-    skills: ["HTML", "CSS", "Javascript", "SASS", "Github"],
+    skills: ["HTML", "CSS", "Javascript", "SCSS", "Github"],
     overview:
       "Sign Up Form is a project with several steps of registering and a full validation logic. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices.",
     link: "https://davemakara.github.io/Sign-up-Form/",
   },
   {
-    id: "p5",
+    id: "p6",
     name: "SENTOBAR",
     image: sentobarImg,
     description:
@@ -96,29 +118,29 @@ export const PROJECTS = [
     link: "https://davemakara.github.io/SENTOBAR/",
   },
   {
-    id: "p6",
+    id: "p7",
     name: "Dice-Game",
     image: diceGameImg,
     description:
       "Dice Game is an app for 2 players with logic - rolling dice and collecting points to win.",
-    skills: ["HTML", "CSS", "Javascript", "SASS", "Github"],
+    skills: ["HTML", "CSS", "Javascript", "SCSS", "Github"],
     overview:
       "Dice Game is an app for 2 players with logic - each player rolls the dice and collects points to win. First player who reaches 100 points is a winner. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices.",
     link: "https://davemakara.github.io/Dice-Game/",
   },
   {
-    id: "p7",
+    id: "p8",
     name: "Weather App",
     image: weatherAppImg,
     description:
       "Weather App is an app for getting weather forecast of any city based on search, using API and displaying it on the screen.",
-    skills: ["HTML", "CSS", "Javascript", "SASS", "Github"],
+    skills: ["HTML", "CSS", "Javascript", "SCSS", "Github"],
     overview:
       "Weather App is an app with a logic (interacting with API) to get an instant weather forecast for any chosen city based on search. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices.",
     link: "https://davemakara.github.io/Weather-App/",
   },
   {
-    id: "p8",
+    id: "p9",
     name: "Investment Calculator",
     image: investmentImg,
     description:
@@ -137,12 +159,12 @@ export const PROJECTS = [
     link: "https://davemakara.github.io/investment-calculator/",
   },
   {
-    id: "p9",
+    id: "p10",
     name: "SKOTE Dashboard",
     image: skoteImg,
     description:
       "SKOTE Dashboard is a markup project displaying the personal dashboard of the agent with some stats, activities and tables.",
-    skills: ["HTML", "CSS", "SASS", "Github"],
+    skills: ["HTML", "CSS", "SCSS", "Github"],
     overview:
       "SKOTE Dashboard is a markup project displaying the personal dashboard of the agent with some stats, activities and tables. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices.",
     link: "https://davemakara.github.io/SKOTE---Project-2/",
