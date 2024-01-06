@@ -13,6 +13,7 @@ export const MY_SKILLS = [
   "HTML",
   "CSS",
   "JavaScript",
+  "TypeScript",
   "React",
   "Redux",
   "React Router",
