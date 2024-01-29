@@ -1,6 +1,7 @@
 import jobListingImg from "../assets/joblisting.png";
 import githubSearchImg from "../assets/githubUserSearch.png";
 import foodOrderImg from "../assets/foodApp.png";
+import tbcXusaidImg from "../assets/TBCxUSAID.png";
 import investmentImg from "../assets/investmentApp.png";
 import sentobarImg from "../assets/SENTOBAR.png";
 import diceGameImg from "../assets/dice-game.png";
@@ -77,8 +78,20 @@ export const PROJECTS = [
       "Food Order App is an app similar to the food delivery apps where you have several products selection with option to add it on a cart and manage. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices.",
     link: "https://davemakara.github.io/order-food-app/",
   },
+
   {
     id: "p4",
+    name: "TBC x USAID page",
+    image: tbcXusaidImg,
+    description:
+      "An identical page of tbc IT academy website - including carousel, cards and QA section.",
+    skills: ["HTML", "CSS", "Javascript", "Github"],
+    overview:
+      "This is one identical page of tbc IT academy website - including carousel, cards and QA section. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices.",
+    link: "https://davemakara.github.io/TBCxUSAID/",
+  },
+  {
+    id: "p5",
     name: "Project App",
     image: projectAppImg,
     description:
@@ -97,7 +110,7 @@ export const PROJECTS = [
     link: "https://davemakara.github.io/Project-App/",
   },
   {
-    id: "p5",
+    id: "p6",
     name: "Sign Up Form",
     image: signupImg,
     description:
@@ -108,7 +121,7 @@ export const PROJECTS = [
     link: "https://davemakara.github.io/Sign-up-Form/",
   },
   {
-    id: "p6",
+    id: "p7",
     name: "SENTOBAR",
     image: sentobarImg,
     description:
@@ -119,7 +132,7 @@ export const PROJECTS = [
     link: "https://davemakara.github.io/SENTOBAR/",
   },
   {
-    id: "p7",
+    id: "p8",
     name: "Dice-Game",
     image: diceGameImg,
     description:
@@ -129,19 +142,19 @@ export const PROJECTS = [
       "Dice Game is an app for 2 players with logic - each player rolls the dice and collects points to win. First player who reaches 100 points is a winner. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices.",
     link: "https://davemakara.github.io/Dice-Game/",
   },
+  // {
+  //   id: "p9",
+  //   name: "Weather App",
+  //   image: weatherAppImg,
+  //   description:
+  //     "Weather App is an app for getting weather forecast of any city based on search, using API and displaying it on the screen.",
+  //   skills: ["HTML", "CSS", "Javascript", "SCSS", "Github"],
+  //   overview:
+  //     "Weather App is an app with a logic (interacting with API) to get an instant weather forecast for any chosen city based on search. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices.",
+  //   link: "https://davemakara.github.io/Weather-App/",
+  // },
   {
-    id: "p8",
-    name: "Weather App",
-    image: weatherAppImg,
-    description:
-      "Weather App is an app for getting weather forecast of any city based on search, using API and displaying it on the screen.",
-    skills: ["HTML", "CSS", "Javascript", "SCSS", "Github"],
-    overview:
-      "Weather App is an app with a logic (interacting with API) to get an instant weather forecast for any chosen city based on search. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices.",
-    link: "https://davemakara.github.io/Weather-App/",
-  },
-  {
-    id: "p9",
+    id: "p10",
     name: "Investment Calculator",
     image: investmentImg,
     description:
@@ -160,7 +173,7 @@ export const PROJECTS = [
     link: "https://davemakara.github.io/investment-calculator/",
   },
   {
-    id: "p10",
+    id: "p11",
     name: "SKOTE Dashboard",
     image: skoteImg,
     description:
