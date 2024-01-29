@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.022058d1.css",
-    "main.js": "/my-portfolio/static/js/main.99faf9da.js",
+    "main.js": "/my-portfolio/static/js/main.f0e7a1a6.js",
     "static/media/SENTOBAR.png": "/my-portfolio/static/media/SENTOBAR.d0d55a6b3a1f11831ea4.png",
+    "static/media/TBCxUSAID.png": "/my-portfolio/static/media/TBCxUSAID.bf3043c63205e935ca1e.png",
     "static/media/foodApp.png": "/my-portfolio/static/media/foodApp.fef1844ceb87d4dd6771.png",
     "static/media/profile2.jpg": "/my-portfolio/static/media/profile2.5aeb26f98a66d98789a3.jpg",
     "static/media/dice-game.png": "/my-portfolio/static/media/dice-game.4558e5b37ac6b5a7c19f.png",
@@ -23,10 +24,10 @@
     "static/media/menu.svg": "/my-portfolio/static/media/menu.67af819cd8b016553cfe5e91fc4626d9.svg",
     "static/media/menu-close.svg": "/my-portfolio/static/media/menu-close.26f09e36db4c8500ff4b8c90e24d5f7a.svg",
     "main.022058d1.css.map": "/my-portfolio/static/css/main.022058d1.css.map",
-    "main.99faf9da.js.map": "/my-portfolio/static/js/main.99faf9da.js.map"
+    "main.f0e7a1a6.js.map": "/my-portfolio/static/js/main.f0e7a1a6.js.map"
   },
   "entrypoints": [
     "static/css/main.022058d1.css",
-    "static/js/main.99faf9da.js"
+    "static/js/main.f0e7a1a6.js"
   ]
 }
