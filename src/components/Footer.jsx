@@ -6,6 +6,7 @@ import instaLogo from "../assets/footer-insta-icon.png";
 import fbLogo from "../assets/footer-fb-icon.png";
 
 const Footer = () => {
+  console.log("Hello");
   return (
     <section className={styles["footer-section"]}>
       <div className={styles["footer-wrapper"]}>
