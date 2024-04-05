@@ -16,6 +16,7 @@ export const MY_SKILLS = [
   "JavaScript",
   "TypeScript",
   "React",
+  "Next.js",
   "Redux",
   "React Router",
   "Styled Components",
@@ -26,6 +27,8 @@ export const MY_SKILLS = [
   "Responsive Design",
   "GIT",
   "Github",
+  "NPM",
+  "Figma",
 ];
 
 export const PROJECTS = [
