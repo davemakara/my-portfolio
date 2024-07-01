@@ -14,7 +14,7 @@ const ProjectsPage = () => {
         </p>
       </div>
       <div className={styles["projects-box"]}>
-        {PROJECTS.map((el) => (
+        {PROJECTS.toReversed().map((el) => (
           <ProjectItem
             key={el.id}
             image={el.image}
