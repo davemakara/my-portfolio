@@ -1,47 +1,54 @@
-import { NavLink } from "react-router-dom";
-
+import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./MainNavigation.module.css";
 
-const MainNavigation = () => {
+const MainNavigation = ({ homeRef, aboutRef, projectsRef, contactRef }) => {
+  const handleScroll = (ref) => {
+    window.scrollTo({
+      top: ref.offsetTop,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <nav className={styles["main-navigation"]}>
       <ul>
         <li>
-          <NavLink
+          <Link
             to="/"
-            className={`${(isActive) => (isActive ? styles.active : "")} ${
-              styles.navLink
-            } `}
+            onClick={() => handleScroll(homeRef)}
+            className={styles.navLink}
           >
             HOME
-          </NavLink>
+          </Link>
         </li>
         <li>
-          <NavLink
+          <Link
             to="/about"
-            className={`${styles.navLink} ${({ isActive }) =>
-              isActive ? styles.active : ""}`}
+            onClick={() => handleScroll(aboutRef)}
+            className={styles.navLink}
           >
             ABOUT
-          </NavLink>
+          </Link>
         </li>
         <li>
-          <NavLink
+          <Link
             to="/projects"
-            className={`${styles.navLink} ${(isActive) =>
-              isActive ? styles.active : ""}`}
+            onClick={() => handleScroll(projectsRef)}
+            className={styles.navLink}
           >
             PROJECTS
-          </NavLink>
+          </Link>
         </li>
         <li>
-          <NavLink
+          <Link
             to="/contact"
-            className={`${styles.navLink} ${({ isActive }) =>
-              isActive ? styles.active : ""}`}
+            onClick={() => handleScroll(contactRef)}
+            className={styles.navLink}
           >
             CONTACT
-          </NavLink>
+          </Link>
         </li>
       </ul>
     </nav>

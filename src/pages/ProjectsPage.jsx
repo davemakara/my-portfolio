@@ -3,9 +3,9 @@ import styles from "./ProjectsPage.module.css";
 
 import { PROJECTS } from "../store/store";
 
-const ProjectsPage = () => {
+const ProjectsPage = ({ projectsRef }) => {
   return (
-    <section className={styles["projectsPage-wrapper"]}>
+    <section ref={projectsRef} className={styles["projectsPage-wrapper"]}>
       <div className={styles["projects-heading"]}>
         <h1>PROJECTS</h1>
         <p>
