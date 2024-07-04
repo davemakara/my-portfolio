@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
-import { Router, Routes, Route } from "react-router-dom";
+import React, { useState, useRef, useEffect } from "react";
 import Homepage from "./pages/Homepage";
 import AboutPage from "./pages/AboutPage";
 import ProjectsPage from "./pages/ProjectsPage";
@@ -7,6 +6,7 @@ import ContactPage from "./pages/ContactPage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import BurgerMenu from "./components/BurgerMenu";
+import LoadingProject from "./components/LoadingProject";
 
 function App() {
   const homeRef = useRef(null);
@@ -14,6 +14,7 @@ function App() {
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
 
+  const [isMounted, setIsMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [menuIsClicked, setMenuIsClicked] = useState(false);
 
@@ -22,38 +23,95 @@ function App() {
     setMenuIsClicked((prev) => !prev);
   };
 
-  const handleNavClick = (ref) => {
-    ref.current.scrollIntoView({ behavior: "smooth" });
-    window.history.pushState(null, null, `#${ref.current.id}`);
-  };
+  useEffect(() => {
+    setTimeout(() => {
+      setIsMounted(true);
+    }, 3000);
+  });
+
+  const sections = [
+    { ref: homeRef, path: "/" },
+    { ref: aboutRef, path: "/about" },
+    { ref: projectsRef, path: "/projects" },
+    { ref: contactRef, path: "/contact" },
+  ];
+
+  useEffect(() => {
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          window.history.replaceState(null, "", entry.target.dataset.path);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, {
+      threshold: 0.6,
+    });
+
+    sections.forEach(({ ref }) => {
+      if (ref.current) {
+        observer.observe(ref.current);
+      }
+    });
+
+    return () => {
+      sections.forEach(({ ref }) => {
+        if (ref.current) {
+          observer.unobserve(ref.current);
+        }
+      });
+    };
+  }, [sections]);
+
+  useEffect(() => {
+    const handlePathChange = () => {
+      const { pathname } = window.location;
+      const section = sections.find((sec) => sec.path === pathname);
+      if (isMounted && section) {
+        section.ref.current.scrollIntoView({ behavior: "smooth" });
+      }
+    };
+
+    handlePathChange();
+
+    window.addEventListener("popstate", handlePathChange);
+
+    return () => {
+      window.removeEventListener("popstate", handlePathChange);
+    };
+  }, [sections]);
 
   return (
     <>
-      <Header
-        onButtonClick={handleButtonClick}
-        displayMenu={menuIsClicked}
-        homeRef={homeRef}
-        aboutRef={aboutRef}
-        projectsRef={projectsRef}
-        contactRef={contactRef}
-      />
-      {isOpen && <BurgerMenu onButtonClick={handleButtonClick} />}
-      <Routes>
-        <Route path="/" element={<Homepage homeRef={homeRef} />} />
-
-        <Route path="/about" element={<AboutPage aboutRef={aboutRef} />} />
-
-        <Route
-          path="/projects"
-          element={<ProjectsPage projectsRef={projectsRef} />}
-        />
-
-        <Route
-          path="/contact"
-          element={<ContactPage contactRef={contactRef} />}
-        />
-      </Routes>
-      <Footer />
+      {!isMounted ? (
+        <LoadingProject />
+      ) : (
+        <>
+          <Header
+            onButtonClick={handleButtonClick}
+            displayMenu={menuIsClicked}
+            homeRef={homeRef}
+            aboutRef={aboutRef}
+            projectsRef={projectsRef}
+            contactRef={contactRef}
+          />
+          {isOpen && <BurgerMenu onButtonClick={handleButtonClick} />}
+          <div id="home" ref={homeRef} data-path="/">
+            <Homepage />
+          </div>
+          <div id="about" ref={aboutRef} data-path="/about">
+            <AboutPage />
+          </div>
+          <div id="projects" ref={projectsRef} data-path="/projects">
+            <ProjectsPage />
+          </div>
+          <div id="contact" ref={contactRef} data-path="/contact">
+            <ContactPage />
+          </div>
+          <Footer />
+        </>
+      )}
     </>
   );
 }

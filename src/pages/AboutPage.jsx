@@ -2,9 +2,9 @@ import styles from "./AboutPage.module.css";
 
 import { MY_SKILLS } from "../store/store";
 
-const AboutPage = ({ aboutRef }) => {
+const AboutPage = () => {
   return (
-    <section ref={aboutRef} className={styles["aboutPage-wrapper"]}>
+    <section className={styles["aboutPage-wrapper"]}>
       <div className={styles["about-me"]}>
         <h1>ABOUT ME</h1>
         <p>

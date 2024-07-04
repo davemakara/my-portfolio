@@ -1,54 +1,38 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styles from "./MainNavigation.module.css";
 
 const MainNavigation = ({ homeRef, aboutRef, projectsRef, contactRef }) => {
-  const handleScroll = (ref) => {
-    window.scrollTo({
-      top: ref.offsetTop,
-      left: 0,
-      behavior: "smooth",
-    });
+  const handleScroll = (ref, path) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+    window.history.pushState(null, null, path);
   };
 
   return (
     <nav className={styles["main-navigation"]}>
       <ul>
-        <li>
-          <Link
-            to="/"
-            onClick={() => handleScroll(homeRef)}
-            className={styles.navLink}
-          >
-            HOME
-          </Link>
+        <li
+          onClick={() => handleScroll(homeRef, "/")}
+          className={styles.navLink}
+        >
+          HOME
         </li>
-        <li>
-          <Link
-            to="/about"
-            onClick={() => handleScroll(aboutRef)}
-            className={styles.navLink}
-          >
-            ABOUT
-          </Link>
+        <li
+          onClick={() => handleScroll(aboutRef, "/about")}
+          className={styles.navLink}
+        >
+          ABOUT
         </li>
-        <li>
-          <Link
-            to="/projects"
-            onClick={() => handleScroll(projectsRef)}
-            className={styles.navLink}
-          >
-            PROJECTS
-          </Link>
+        <li
+          onClick={() => handleScroll(projectsRef, "/projects")}
+          className={styles.navLink}
+        >
+          PROJECTS
         </li>
-        <li>
-          <Link
-            to="/contact"
-            onClick={() => handleScroll(contactRef)}
-            className={styles.navLink}
-          >
-            CONTACT
-          </Link>
+        <li
+          onClick={() => handleScroll(contactRef, "/contact")}
+          className={styles.navLink}
+        >
+          CONTACT
         </li>
       </ul>
     </nav>

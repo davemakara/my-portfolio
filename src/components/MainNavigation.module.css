@@ -19,6 +19,8 @@ ul {
   letter-spacing: 1px;
   /* font-weight: 700; */
   transition: color 0.3s;
+  background: none;
+  cursor: pointer;
 }
 
 .navLink:hover {
