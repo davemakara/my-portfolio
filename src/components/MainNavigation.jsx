@@ -22,12 +22,7 @@ const MainNavigation = ({ homeRef, aboutRef, projectsRef, contactRef }) => {
         >
           ABOUT
         </li>
-        <li
-          onClick={() => handleScroll(projectsRef, "/projects")}
-          className={styles.navLink}
-        >
-          PROJECTS
-        </li>
+
         <li
           onClick={() => handleScroll(contactRef, "/contact")}
           className={styles.navLink}

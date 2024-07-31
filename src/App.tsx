@@ -1,17 +1,15 @@
 import React, { useState, useRef, useEffect } from "react";
 import Homepage from "./pages/Homepage";
 import AboutPage from "./pages/AboutPage";
-import ProjectsPage from "./pages/ProjectsPage";
 import ContactPage from "./pages/ContactPage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import BurgerMenu from "./components/BurgerMenu";
 import LoadingProject from "./components/LoadingProject";
 
-function App() {
+const App = () => {
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
-  const projectsRef = useRef(null);
   const contactRef = useRef(null);
 
   const [isMounted, setIsMounted] = useState(false);
@@ -32,7 +30,7 @@ function App() {
   const sections = [
     { ref: homeRef, path: "/" },
     { ref: aboutRef, path: "/about" },
-    { ref: projectsRef, path: "/projects" },
+
     { ref: contactRef, path: "/contact" },
   ];
 
@@ -93,7 +91,6 @@ function App() {
             displayMenu={menuIsClicked}
             homeRef={homeRef}
             aboutRef={aboutRef}
-            projectsRef={projectsRef}
             contactRef={contactRef}
           />
           {isOpen && <BurgerMenu onButtonClick={handleButtonClick} />}
@@ -103,9 +100,9 @@ function App() {
           <div id="about" ref={aboutRef} data-path="/about">
             <AboutPage />
           </div>
-          <div id="projects" ref={projectsRef} data-path="/projects">
+          {/* <div id="projects" ref={projectsRef} data-path="/projects">
             <ProjectsPage />
-          </div>
+          </div> */}
           <div id="contact" ref={contactRef} data-path="/contact">
             <ContactPage />
           </div>
@@ -114,6 +111,6 @@ function App() {
       )}
     </>
   );
-}
+};
 
 export default App;
