@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { PROJECTS } from "../store/store";
+import { Project } from "../store/store";
 
 import styles from "./ProjectDetail.module.css";
 

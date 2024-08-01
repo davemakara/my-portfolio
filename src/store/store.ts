@@ -11,7 +11,17 @@ import weatherAppImg from "../assets/weather-app.png";
 import skoteImg from "../assets/skote.png";
 import flowRecordsImg from "../assets/flowrecords.png";
 
-export const MY_SKILLS = [
+export interface Project {
+  id: string;
+  name: string;
+  image: string;
+  description: string;
+  skills: string[];
+  overview: string;
+  link: string;
+}
+
+export const MY_SKILLS: string[] = [
   "HTML",
   "CSS",
   "JavaScript",
@@ -34,7 +44,7 @@ export const MY_SKILLS = [
   "Figma",
 ];
 
-export const PROJECTS = [
+export const PROJECTS: Project[] = [
   {
     id: "p1",
     name: "Sign Up Form",
