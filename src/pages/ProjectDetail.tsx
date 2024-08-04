@@ -11,40 +11,43 @@ const ProjectDetail = () => {
 
   return (
     <section className={styles["project-detail-wrapper"]}>
-      <span className={styles["image-wrapper"]}>
-        <img src={project.image} alt={project.image} />
-      </span>
-      <h1>{project.name}</h1>
-      <div className={styles["project-below-wrapper"]}>
-        <h4>Project Overview</h4>
-        <p>{project.overview}</p>
-        <p className={styles.lastP}>
-          Feel free to check out the Project by visiting the Live Link.
-        </p>
-        <h4>Tools Used</h4>
-        <ul className={styles["project-skills-wrapper"]}>
-          {project.skills.map((skill) => (
-            <span key={skill} className={styles["project-skill"]}>
-              {skill}
-            </span>
-          ))}
-        </ul>
-        <h4>See Live</h4>
-        <div className={styles["btn-wrapper"]}>
-          <a
-            href={project.link}
-            target="_blank"
-            className={styles["a-live-link"]}
-          >
-            LIVE LINK
-          </a>
-
-          <Link to="/projects" className={styles["a-go-back"]}>
-            GO BACK
-          </Link>
-        </div>
-      </div>
+      <h1>hello</h1>
     </section>
+    // <section className={styles["project-detail-wrapper"]}>
+    //   <span className={styles["image-wrapper"]}>
+    //     <img src={project.image} alt={project.image} />
+    //   </span>
+    //   <h1>{project.name}</h1>
+    //   <div className={styles["project-below-wrapper"]}>
+    //     <h4>Project Overview</h4>
+    //     <p>{project.overview}</p>
+    //     <p className={styles.lastP}>
+    //       Feel free to check out the Project by visiting the Live Link.
+    //     </p>
+    //     <h4>Tools Used</h4>
+    //     <ul className={styles["project-skills-wrapper"]}>
+    //       {project.skills.map((skill) => (
+    //         <span key={skill} className={styles["project-skill"]}>
+    //           {skill}
+    //         </span>
+    //       ))}
+    //     </ul>
+    //     <h4>See Live</h4>
+    //     <div className={styles["btn-wrapper"]}>
+    //       <a
+    //         href={project.link}
+    //         target="_blank"
+    //         className={styles["a-live-link"]}
+    //       >
+    //         LIVE LINK
+    //       </a>
+
+    //       <Link to="/projects" className={styles["a-go-back"]}>
+    //         GO BACK
+    //       </Link>
+    //     </div>
+    //   </div>
+    // </section>
   );
 };
 

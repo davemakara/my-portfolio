@@ -3,9 +3,9 @@ import styles from "./Homepage.module.css";
 
 import SocialBox from "../components/SocialBox";
 
-const Homepage = ({ homeRef }) => {
+const Homepage = () => {
   return (
-    <section ref={homeRef} className={styles["main-homepage"]}>
+    <section className={styles["main-homepage"]}>
       <SocialBox />
       <div className={styles["main-div"]}>
         <h1>HELLO, DAVID IS HERE.</h1>

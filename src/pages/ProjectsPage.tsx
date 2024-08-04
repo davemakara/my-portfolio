@@ -13,17 +13,11 @@ const ProjectsPage = () => {
           created with each project containing its own case study
         </p>
       </div>
-      <div className={styles["projects-box"]}>
+      {/* <div className={styles["projects-box"]}>
         {PROJECTS.toReversed().map((el) => (
-          <ProjectItem
-            key={el.id}
-            image={el.image}
-            name={el.name}
-            description={el.description}
-            data={el}
-          />
+          <ProjectItem key={el.id} data={el} />
         ))}
-      </div>
+      </div> */}
     </section>
   );
 };

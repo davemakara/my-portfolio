@@ -6,14 +6,7 @@ import closeMenuIcon from "../assets/menu-close.svg";
 import burgerMenuIcon from "../assets/burgerMenu.jpg";
 import xMenuIcon from "../assets/x-button.png";
 
-const Header = ({
-  onButtonClick,
-  displayMenu,
-  homeRef,
-  aboutRef,
-  projectsRef,
-  contactRef,
-}) => {
+const Header = ({}) => {
   return (
     <header>
       <span className={styles.profileInfo}>
@@ -23,19 +16,7 @@ const Header = ({
         <p>DAVID MAKAROV</p>
       </span>
 
-      <img
-        src={!displayMenu ? burgerMenuIcon : xMenuIcon}
-        alt="menu icon"
-        className={styles["menu-icon"]}
-        onClick={onButtonClick}
-      />
-
-      <MainNavigation
-        homeRef={homeRef}
-        aboutRef={aboutRef}
-        projectsRef={projectsRef}
-        contactRef={contactRef}
-      />
+      <MainNavigation />
     </header>
   );
 };
