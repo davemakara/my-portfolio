@@ -6,17 +6,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap");
 
-* {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style-type: none;
   text-decoration: none;
-  font-family: "Rubik Moonrocks", sans-serif;
-}
+  
+} */
 
 body {
-  /* background: linear-gradient(to right, #001f3f, #003366); */
   background: #212529;
   color: #ffffff;
+  font-family: "Rubik Moonrocks", sans-serif;
 }
