@@ -5,7 +5,7 @@ import socialFacebook from "../assets/social-facebook.png";
 
 const SocialBox = () => {
   return (
-    <div className="absolute z-10 hidden top-1/2 left-0 p-[5px] bg-white rounded-sm shadow-md shadow-black -translate-y-1/2 lg:block">
+    <div className="absolute z-10 hidden top-1/2 left-0 p-[5px] bg-white rounded-r-md shadow-md shadow-black -translate-y-1/2 lg:block">
       <ul className="block">
         <li>
           <a
